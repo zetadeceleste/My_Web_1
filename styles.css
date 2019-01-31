@@ -1,7 +1,25 @@
 * {
     margin: 0;
     font-family: 'Barlow', sans-serif;
-    color: #1d1d1b;
+}
+
+.inconstruction {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+}
+
+.inconstruction h1 {
+    font-size: 5em;
+    color: #0569ff;
+    margin-bottom: 3vh;
+}
+
+.inconstruction h2,
+.inconstruction a {
+    color: #313131;
 }
 
 article,
