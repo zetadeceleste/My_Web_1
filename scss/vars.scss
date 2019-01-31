@@ -1,0 +1,27 @@
+// Font sizes
+$font-size-small: 0.5em;
+$font-size-medium: 1em;
+$font-size-title: 6em;
+$font-size-subtitle: 4em;
+
+
+// Colors
+$color-whisper: #EEE;
+$color-nobel: #999;
+$color-dim-gray: #666;
+$color-dodger-blue: rgb(5, 105, 255);
+$color-cobalt: #08449e;
+$color-maire: #1d1d1b;
+
+// Others
+$border-radius: 5px;
+
+// Mixin
+@mixin flex($flow) {
+    display: flex;
+    flex-flow: $flow;
+}
+
+@mixin grid_element {
+
+}

@@ -5,7 +5,8 @@
 }
 
 article,
-#navbar,
+.navbar,
+.contact__form,
 .contact__email,
 footer {
     display: flex;
@@ -18,13 +19,13 @@ article {
     padding-bottom: 10vh;
 }
 
-#navbar {
+.navbar {
+    background: #fff;
     justify-content: space-between;
     position: fixed;
     top: 0;
     width: 90vw;
     height: 10vh;
-    background: #fff;
     padding: 0 5vw;
     z-index: 1;
 }
@@ -34,61 +35,64 @@ article {
 }
 
 .header__img:hover {
-    box-shadow: 2px 3px rgb(230, 230, 230);
+    -webkit-box-shadow: 1px 1px #b3b1b1;
+    -moz-box-shadow: 1px 1px #b3b1b1;
+    box-shadow: 1px 1px #b3b1b1;
 }
 
-#navbar ul {
+.navbar ul {
     display: inline-flex;
     padding: 0;
 }
 
-#navbar li {
+.navbar li {
     list-style: none;
-    font-size: 1.1em;
+    font-size: 1em;
     margin-left: 10vw;
 }
 
-#navbar li a {
+.navbar li a {
     text-decoration: none;
 }
 
-#navbar li a:hover {
+.navbar li a:hover {
     color: #0569ff;
 }
 
-#cover {
+.cover {
+    background-color: #fff;
     justify-content: center;
     align-items: flex-start;
     flex-flow: column;
-    padding-left: 5%;
+    padding-left: 5vw;
 }
 
-#cover h1 {
+.cover h1 {
     font-family: 'Barlow Condensed', sans-serif;
-    font-size: 7em;
+    font-size: 6em;
 }
 
-#cover h2 {
+.cover h2 {
     margin-top: -2vh;
     color: #0569ff;
     font-size: 3em;
 }
 
-#contact,
-#projects {
+.contact,
+.projects {
     justify-content: center;
 }
 
-#about {
-    background-color: rgb(230, 230, 230);
+.about {
+    background-color: #e6e6e6;
 }
 
-#about p {
+.about p {
     width: 60vw;
-    padding: 0 5%;
+    padding: 0 5vw;
 }
 
-#about p,
+.about p,
 h3 {
     font-size: 2.5em;
 }
@@ -97,7 +101,7 @@ h3 {
     font-weight: bold;
 }
 
-#projects {
+.projects {
     flex-flow: column;
     background-color: #fff;
 }
@@ -134,7 +138,7 @@ h3 {
 
 .project-tile__project-info {
     position: absolute;
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: #00000099;
     color: #fff;
     font-size: 1.5em;
     display: flex;
@@ -160,63 +164,123 @@ h3 {
     cursor: pointer;
 }
 
-#contact {
-    flex-flow: column;
+.contact {
     background-color: #1d1d1b;
 }
 
-#contact img {
-    width: 31px;
-    margin: 0 2vw;
+.contact img {
+    width: 2em;
+    margin: 0 1.5vw;
 }
 
-#contact img:hover {
+.contact img:hover {
     transform: scale(1.1);
 }
 
-#contact h3 {
+.contact-title {
+    font-size: 2.5em;
     color: #fff;
     font-weight: 600;
 }
 
+.contact__form-subtitle {
+    color: #fff;
+}
+
+.contact__form {
+    flex-flow: column;
+    width: 30vw;
+    padding-top: 2vh;
+}
+
+.contact__form-input,
+.contact__form-input::placeholder {
+    text-indent: 1vw;
+}
+
+.contact__form-textarea,
+.contact__form-textarea::placeholder {
+    text-indent: 1vw;
+}
+
+.contact__form-input,
+.contact__form-button {
+    height: 4vh;
+}
+
+.contact__form-textarea {
+    resize: none;
+    padding: 1vh 0 0;
+}
+
+.contact__form-button {
+    background: -webkit-linear-gradient(to top, #08449e, #0569ff);
+    background: linear-gradient(to top, #08449e, #0569ff);
+    /* fallback for old browsers */
+    background-color: #0569ff;
+    color: #fff;
+    letter-spacing: .5em;
+    cursor: pointer;
+}
+
+.contact__form-button:hover {
+    background: #08449e;
+}
+
+.contact__form-button:active {
+    box-shadow: inset .125em .125em .75em #313131;
+    -webkit-box-shadow: inset .125em .125em .75em #313131;
+    -moz-box-shadow: inset .125em .125em .75em #313131;
+    color: #e6e6e6;
+}
+
+.contact__form-input,
+.contact__form-textarea,
+.contact__form-button {
+    border-radius: 5px;
+    width: 100%;
+    margin: 1vh 0;
+    border: none;
+    outline: none;
+}
+
+.contact__info-phone,
+.contact__info-email a {
+    color: #fff;
+}
+
 .contact__links {
-    margin: 4vh 0 3vh;
+    margin: 4vh 0;
 }
 
 .contact__email {
-    color: #fff;
     font-size: 1.2em;
-    letter-spacing: 4px;
-    cursor: pointer;
-    text-decoration: none;
-}
-
-.contact__email:hover {
-    color: #3d89fc;
+    letter-spacing: .25em;
+    color: #fff;
 }
 
 .footer {
     justify-content: space-between;
-    background-color: rgb(49, 49, 49);
-    font-size: 0.8em;
+    background-color: #313131;
+    font-size: 0.75em;
     padding: 1vh 1vw;
     text-align: right;
 }
 
 .footer div {
-    color: rgb(179, 177, 177);
+    color: #b3b1b1;
 }
 
 .footer a {
-    color: rgb(133, 133, 133);
+    color: #858585;
 }
 
 @media (max-width: 480px) {
-    #projects {
+    .projects {
         height: auto;
         margin-bottom: 10vh;
     }
-    #about p {
+    .about p {
         width: auto;
     }
     .project-tile {
