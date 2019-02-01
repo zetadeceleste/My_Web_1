@@ -9,10 +9,11 @@
     align-items: center;
     justify-content: center;
     flex-flow: column;
+    text-align: center;
 }
 
 .inconstruction h1 {
-    font-size: 5em;
+    font-size: 4em;
     color: #0569ff;
     margin-bottom: 3vh;
 }
