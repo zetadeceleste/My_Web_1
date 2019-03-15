@@ -55,12 +55,12 @@ html {
   justify-content: flex-start; }
   .cover__title {
     font-family: "Barlow", sans-serif;
-    font-size: 5.75rem;
+    font-size: 5rem;
     line-height: 4.5rem;
     color: #282828; }
   .cover__subtitle {
     font-family: "Barlow", sans-serif;
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-weight: normal;
     letter-spacing: 10px;
     color: #398AC0; }
@@ -100,14 +100,15 @@ html {
     grid-row-gap: 5vh;
     margin: 5vh 0; }
     .portfolio__grid__element figure {
-      width: 432px;
-      height: 270px;
       margin-bottom: 3vh;
       box-shadow: 0.125rem 0.125rem 0.125rem 0.125rem rgba(0, 0, 0, 0.16);
       -webkit-box-shadow: 0.125rem 0.125rem 0.125rem 0.125rem rgba(0, 0, 0, 0.16);
       -moz-box-shadow: 0.125rem 0.125rem 0.125rem 0.125rem rgba(0, 0, 0, 0.16); }
     .portfolio__grid__element__link {
       text-decoration: none; }
+      .portfolio__grid__element__link__picture {
+        width: 100%;
+        height: auto; }
     .portfolio__grid__element__name {
       font-family: "Montserrat", sans-serif;
       font-size: 1.25rem;
@@ -139,17 +140,9 @@ html {
       font-size: 1.125rem;
       color: #282828;
       margin: 3vh 0; }
-      .skills__list__skill--details {
-        display: inline;
-        padding-left: 5vw;
-        color: rgba(40, 40, 40, 0.4); }
-        .skills__list__skill--details__icon {
-          position: absolute;
-          opacity: 0;
-          width: 1.5rem;
-          margin-left: 2vh; }
-        .skills__list__skill--details:hover {
-          cursor: pointer; }
+      .skills__list__skill--details__icon {
+        position: absolute;
+        opacity: 0; }
   .skills__resume {
     font-family: "Roboto", sans-serif;
     font-weight: 500;
@@ -171,25 +164,6 @@ html {
       border: 1px solid #398AC0;
       color: white; }
 
-.details-activate {
-  color: #282828;
-  animation: stickler-for-details 2s linear forwards; }
-.details-icon-activate {
-  animation: all-good 3s ease-in-out 2s; }
-
-@keyframes stickler-for-details {
-  0% {
-    padding-left: 5vw; }
-  100% {
-    color: #282828;
-    padding-left: 0vw; } }
-@keyframes all-good {
-  0% {
-    opacity: 0; }
-  50% {
-    opacity: 1; }
-  100% {
-    opacity: 0; } }
 .contact {
   min-height: 80vh;
   padding: 10vh 5% 10vh;
@@ -316,6 +290,11 @@ html {
         .header__navbar__links__link:hover {
           color: #282828; }
 
+  .cover__title {
+    font-size: 5.75rem; }
+  .cover__subtitle {
+    font-size: 2.5rem; }
+
   .portfolio__grid__element {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -332,6 +311,36 @@ html {
         -webkit-transform: scale(1.1);
         transform: scale(1.1); }
 
+  .skills__list__skill--details {
+    display: inline;
+    padding-left: 5vw;
+    color: rgba(40, 40, 40, 0.4); }
+    .skills__list__skill--details__icon {
+      opacity: 0;
+      width: 1.5rem;
+      margin-left: 2vh; }
+    .skills__list__skill--details:hover {
+      cursor: pointer; }
+
+  .details-activate {
+    color: #282828;
+    animation: stickler-for-details 1.5s linear forwards; }
+  .details-icon-activate {
+    animation: all-good 3s ease-in-out 1.5s; }
+
+  @keyframes stickler-for-details {
+    0% {
+      padding-left: 5vw; }
+    100% {
+      color: #282828;
+      padding-left: 0vw; } }
+  @keyframes all-good {
+    0% {
+      opacity: 0; }
+    50% {
+      opacity: 1; }
+    100% {
+      opacity: 0; } }
   .about {
     align-items: flex-start; }
     .about__paragraph {

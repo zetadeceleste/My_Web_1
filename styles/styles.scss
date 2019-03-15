@@ -70,13 +70,13 @@ html {
     justify-content: flex-start;
     &__title {
         font-family: $font-title;
-        font-size: $font-size-title;
+        font-size: 5rem;
         line-height: $line-height;
         color: $color-nero;
     }
     &__subtitle {
         font-family: $font-title;
-        font-size: $font-size-subtitle;
+        font-size: 2rem;
         font-weight: normal;
         letter-spacing: $letter-spacing;
         color: $color-hex;
@@ -113,8 +113,6 @@ html {
         margin: 5vh 0;
         &__element {
             & figure {
-                width: 432px;
-                height: 270px;
                 margin-bottom: 3vh;
                 box-shadow: .125rem .125rem .125rem .125rem rgba(0, 0, 0, 0.16);
                 -webkit-box-shadow: .125rem .125rem .125rem .125rem rgba(0, 0, 0, 0.16);
@@ -122,6 +120,10 @@ html {
             }
             &__link {
                 text-decoration: none;
+                &__picture {
+                    width: 100%;
+                    height: auto;
+                }
             }
             &__name {
                 font-family: $font-text;
@@ -154,19 +156,9 @@ html {
             font-size: $font-size-medium;
             color: $color-nero;
             margin: 3vh 0;
-            &--details {
-                display: inline;
-                padding-left: 5vw;
-                color: $color-nero--transparent;
-                &__icon {
-                    position: absolute;
-                    opacity: 0;
-                    width: $icon-size;
-                    margin-left: 2vh;
-                }
-                &:hover {
-                    cursor: pointer;
-                }
+            &--details__icon {
+                position: absolute;
+                opacity: 0;
             }
         }
     }
@@ -183,38 +175,6 @@ html {
             border: 1px solid $color-hex;
             color: white;
         }
-    }
-}
-
-.details {
-    &-activate {
-        color: $color-nero;
-        animation: stickler-for-details 2s linear forwards;
-    }
-    &-icon-activate {
-        animation: all-good 3s ease-in-out 2s;
-    }
-}
-
-@keyframes stickler-for-details {
-    0% {
-        padding-left: 5vw;
-    }
-    100% {
-        color: $color-nero;
-        padding-left: 0vw;
-    }
-}
-
-@keyframes all-good {
-    0% {
-        opacity: 0;
-    }
-    50% {
-        opacity: 1;
-    }
-    100% {
-        opacity: 0;
     }
 }
 
@@ -364,7 +324,16 @@ html {
                 }
             }
         }
-    } // Portfolio
+    } // Cover
+    .cover {
+        &__title {
+            font-size: 5.75rem;
+        }
+        &__subtitle {
+            font-size: 2.5rem;
+        }
+    }
+    // Portfolio
     .portfolio__grid__element {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -386,6 +355,50 @@ html {
             }
         }
     } // About
+    .skills__list__skill {
+        &--details {
+            display: inline;
+            padding-left: 5vw;
+            color: $color-nero--transparent;
+            &__icon {
+                opacity: 0;
+                width: $icon-size;
+                margin-left: 2vh;
+            }
+            &:hover {
+                cursor: pointer;
+            }
+        }
+    }
+    .details {
+        &-activate {
+            color: $color-nero;
+            animation: stickler-for-details 1.5s linear forwards;
+        }
+        &-icon-activate {
+            animation: all-good 3s ease-in-out 1.5s;
+        }
+    }
+    @keyframes stickler-for-details {
+        0% {
+            padding-left: 5vw;
+        }
+        100% {
+            color: $color-nero;
+            padding-left: 0vw;
+        }
+    }
+    @keyframes all-good {
+        0% {
+            opacity: 0;
+        }
+        50% {
+            opacity: 1;
+        }
+        100% {
+            opacity: 0;
+        }
+    }
     .about {
         align-items: flex-start;
         &__paragraph {
