@@ -1,0 +1,65 @@
+// Fonts
+$font-title: 'Barlow',
+sans-serif;
+$font-text: 'Montserrat',
+sans-serif;
+$font-button: 'Roboto',
+sans-serif;
+// Sizes (Base16)
+$font-size-title: 5.75rem;
+$font-size-subtitle: 2.5rem;
+$font-size-about: 2rem;
+$font-size-small: .9rem;
+$font-size-medium: 1.125rem;
+$icon-size: 1.5rem;
+$icon-contact-size: 2rem;
+$line-height: 4.5rem;
+$letter-spacing: 10px;
+// Colors (Applying Web Accessibility)
+$color-ghost-white: #f9f8f8;
+$color-hex: #398AC0;
+$color-dodger-blue: #1e90ff;
+$color-congress-blue: #08449E;
+$color-nero: #282828;
+$color-nero--transparent: rgba(40, 40, 40, 0.4);
+// Others
+$border-radius: 5px;
+// Mixins
+@mixin section {
+    min-height: 80vh;
+    padding: 10vh 5% 10vh;
+}
+
+@mixin title {
+    margin-bottom: 10vh;
+    font-size: $font-size-subtitle;
+    font-family: $font-title;
+    color: $color-nero--transparent;
+    font-weight: normal;
+    letter-spacing: $letter-spacing;
+}
+
+@mixin button-resume {
+    font-family: $font-button;
+    font-weight: 500;
+    color: $color-hex;
+    font-size: $font-size-small;
+    padding: 1.5vh 2vw;
+    letter-spacing: 1.25px;
+    border: 1px solid $color-hex;
+    border-radius: 5px;
+    outline: none;
+}
+
+@mixin button-form {
+    border-radius: 5px;
+    border: none;
+    width: 30%;
+    letter-spacing: 1.25px;
+    font-family: $font-button;
+    font-weight: 500;
+    padding: 1.5vh 2vw;
+    color: white;
+    background-color: $color-hex;
+    outline: none;
+}
