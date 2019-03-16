@@ -39,8 +39,11 @@ html {
         color: rgba(40, 40, 40, 0.4);
         text-decoration: none; }
         .header__navbar__links__link--icon {
-          display: block;
-          width: 1.5rem; }
+          display: flex;
+          justify-content: center;
+          align-items: center; }
+          .header__navbar__links__link--icon img {
+            width: 1.5rem; }
 
 .header-white {
   background-color: white;
@@ -80,7 +83,7 @@ html {
     letter-spacing: 10px; }
   .about__paragraph {
     font-family: "Montserrat", sans-serif;
-    font-size: 2rem;
+    font-size: 1.75;
     color: #282828; }
 
 .portfolio {
@@ -294,6 +297,9 @@ html {
     font-size: 5.75rem; }
   .cover__subtitle {
     font-size: 2.5rem; }
+
+  .about__paragraph {
+    font-size: 2rem; }
 
   .portfolio__grid__element {
     display: grid;

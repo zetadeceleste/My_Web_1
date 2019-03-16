@@ -48,8 +48,12 @@ html {
                 color: $color-nero--transparent;
                 text-decoration: none;
                 &--icon {
-                    display: block;
-                    width: $icon-size;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    & img {
+                        width: $icon-size;
+                    }
                 }
             }
         }
@@ -94,7 +98,7 @@ html {
     }
     &__paragraph {
         font-family: $font-text;
-        font-size: $font-size-about;
+        font-size: 1.75;
         color: $color-nero;
     }
 }
@@ -332,8 +336,10 @@ html {
         &__subtitle {
             font-size: 2.5rem;
         }
-    }
-    // Portfolio
+    } // About
+    .about__paragraph {
+        font-size: $font-size-about;
+    } // Portfolio
     .portfolio__grid__element {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -354,7 +360,7 @@ html {
                 }
             }
         }
-    } // About
+    } // Skills
     .skills__list__skill {
         &--details {
             display: inline;
