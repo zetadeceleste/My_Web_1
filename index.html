@@ -8,7 +8,6 @@
         window.dataLayer = window.dataLayer || [];
         function gtag() { dataLayer.push(arguments); }
         gtag('js', new Date());
-
         gtag('config', 'UA-136424507-1');
     </script>
     <meta charset="UTF-8">
@@ -86,9 +85,8 @@
                     <hgroup>
                         <h3 class="portfolio__grid__element__name">Fausto Marañón
                             website.</h3>
-                        <h4 Class="portfolio__grid__element__description">DESIGN /
-                            COPYWRITE / WEBSITE
-                            LAYOUT / DEVELOPMENT</h4>
+                        <h4 Class="portfolio__grid__element__description">PAGE LAYOUT DESIGN /
+                            COPYWRITTING / WEB DEVELOPMENT</h4>
                     </hgroup>
                 </div>
 
@@ -102,9 +100,8 @@
                     </figure>
                     <hgroup>
                         <h3 class="portfolio__grid__element__name">Pomelo website.</h3>
-                        <h4 Class="portfolio__grid__element__description">DESIGN /
-                            COPYWRITE / WEBSITE
-                            LAYOUT / DEVELOPMENT</h4>
+                        <h4 Class="portfolio__grid__element__description">PAGE LAYOUT DESIGN /
+                            COPYWRITTING / WEB DEVELOPMENT</h4>
                     </hgroup>
                 </div>
 
@@ -119,8 +116,7 @@
                     <hgroup>
                         <h3 class="portfolio__grid__element__name">AMDE website, a
                             volunteer work.</h3>
-                        <h4 Class="portfolio__grid__element__description">WEBSITE
-                            LAYOUT / DEVELOPMENT</h4>
+                        <h4 Class="portfolio__grid__element__description">WEB DEVELOPMENT</h4>
                     </hgroup>
                 </div>
 
@@ -137,8 +133,7 @@
                         <h3 class="portfolio__grid__element__name">College
                             Project: a videogame.</h3>
                         <h4 Class="portfolio__grid__element__description">GAME
-                            IDEA / DESIGN /
-                            DEVELOPMENT</h4>
+                            IDEA / PAGE LAYOUT DESIGN / WEB DEVELOPMENT</h4>
                     </hgroup>
                 </div>
 
@@ -189,22 +184,21 @@
 
             <h2 class="contact__title">contact me.</h2>
 
+            <p class="contact__message">Feel free to write me a message.<br>I'd be glad to answer
+                you !</p>
+
             <div class="contact__flex">
 
-                <div class="contact__flex__message">
-                    <p class="contact__flex__message__text">Feel free to write me a message.<br>I'd be glad to answer
-                        you !</p>
-                    <form class="contact__flex__message__form" action="https://formspree.io/zdceleste@gmail.com"
-                        method="POST" accept-charset="UTF-8">
-                        <input class="contact__flex__message__form__input" type="text" name="name" placeholder="Name"
-                            required>
-                        <input class="contact__flex__message__form__input" type="text" name="email" placeholder="E-mail"
-                            required>
-                        <textarea class="contact__flex__message__form__textarea" rows="5" name="message"
-                            placeholder="Your message..." required></textarea>
-                        <button class="contact__flex__message__form__button" type="submit">SEND</button>
-                    </form>
-                </div>
+                <form class="contact__flex__form" action="https://formspree.io/zdceleste@gmail.com" method="POST"
+                    accept-charset="UTF-8">
+                    <label class="contact__flex__form__label" for="name">Name</label>
+                    <input class="contact__flex__form__input" type="text" name="name" required>
+                    <label class="contact__flex__form__label" for="email">E-mail</label>
+                    <input class="contact__flex__form__input" type="text" name="email" required>
+                    <label class="contact__flex__form__label" for="message">Your Message</label>
+                    <textarea class="contact__flex__form__textarea" rows="5" name="message" required></textarea>
+                    <button class="contact__flex__form__button" type="submit">SEND</button>
+                </form>
 
                 <figure class="contact__flex__picture">
                     <img src="./images/me.jpg" alt="A picture of me." title=":D">
